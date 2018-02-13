@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-param-reassign": ["off"],
+    "react/react-in-jsx-scope": ["off"],
+    "react/jsx-filename-extension": ["off"],
+    "react/no-unknown-property": ["off"]
+  },
+  "globals": {
+      "Vue": true,
+      "chrome": true
+  }
+}

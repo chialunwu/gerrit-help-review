@@ -1,32 +1,33 @@
 ## Introduction
-This is a Chrome extension for helping [gerrit](https://gerrit.googlesource.com/gerrit) users to identify the incoming code reviews that he/she hasn't reviewed yet quickly.
+This is a Chrome extension for helping ![](media/icon.png) [gerrit](https://gerrit.googlesource.com/gerrit) code review users to identify the incoming code reviews that he/she hasn't reviewed yet quickly.
 
 ## Features
-1. Show customizable images based on the review lived time (*Now - Commit 1st submit time*)
+1. Show customizable icons based on the review age (*Now - Commit initial submit time*)
 
-   Default:
-   
-   * Show ![](https://i.imgur.com/sQieR8F.gif) when review age < 1 day
-   * Show ![](https://i.imgur.com/bHhE3C3.gif) when 1 day < review age < 2 days
-   * Show ![](https://i.imgur.com/bHhE3C3.gif)![test](https://i.imgur.com/bHhE3C3.gif) when review age > 2 days
-   * Show ![](https://i.imgur.com/zZwdBZK.png) if reviewed but new patchset submitted
+   e.g (default):
 
-2. Show review lived time with customizable color
+   * Show ![](media/help_review_slow.gif) when review age 0~1 day
+   * Show ![](media/help_review_fast.gif) when review age 1~2 days
+   * Show ![](media/help_review_fast.gif)![](media/help_review_fast.gif) when review age > 2 days
+   * Show ![](media/review_again.png) if need review again
+   * Show nothing if already reviewed
 
-   Default:
-   
-   * Show 14h (green) when review age < 1 day
-   * Show 1d (orange) when 1 day < review age < 2 days
+2. Show review age with customizable color
+
+   e.g (default):
+
+   * Show 14h (green) when review age 0~1 day
+   * Show 1d (orange) when age 1~2 day
    * Show 3d (red) when review age > 2 days
 
 ## Screenshots
 1. Gerrit review listing page
 
-![](https://i.imgur.com/ecHXnJ6.png)
+![](media/preview_1.png)
 
 2. Chrome extension popup settings
 
-![](https://i.imgur.com/0I0nWIX.png)
+![](media/preview_2.png)
 
 ## Build
 1. `npm install`

@@ -1,0 +1,10 @@
+.cache/
+dist/
+node_modules/
+GerritHelpReview/
+
+*.crx
+*.pem
+package-lock.json
+.DS_Store
+*.zip

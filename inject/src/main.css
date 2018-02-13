@@ -1,0 +1,11 @@
+.helpReview-td {
+  white-space: nowrap;
+}
+
+.helpReview-age-label {
+  font-size: 0.8em;
+  padding: 3px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

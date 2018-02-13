@@ -1,0 +1,35 @@
+{
+  "name": "gerrit-help-review",
+  "version": "1.0.0",
+  "description": "A Chrome extension for helping gerrit users to identify the incoming code reviews that he/she hasn't reviewed yet quickly",
+  "main": "main.js",
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "vue": "^2.5.13",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.5.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint inject; eslint popup;",
+    "build": "NODE_ENV=production sh inject/build.sh; NODE_ENV=production sh popup/build.sh",
+    "build-popup": "NODE_ENV=production sh popup/build.sh",
+    "build-inject": "NODE_ENV=production sh inject/build.sh",
+    "prepare": "mkdir -p GerritHelpReview; cp -r dist manifest.json media/icon.png media/icon_128.png GerritHelpReview"
+  },
+  "author": "Leo Wu",
+  "license": "MIT"
+}

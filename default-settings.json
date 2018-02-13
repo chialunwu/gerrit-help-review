@@ -1,0 +1,49 @@
+{
+  "helpReviewIcons": {
+    "column": "Status",
+    "target": "",
+    "reviewAgainUrl": "https://i.imgur.com/zZwdBZK.png",
+    "rules": [
+      {
+        "hours": 24,
+        "urls": [
+          "https://i.imgur.com/sQieR8F.gif"
+        ],
+        "iconSize": "20px"
+      },
+      {
+        "hours": 48,
+        "urls": [
+          "https://i.imgur.com/bHhE3C3.gif"
+        ],
+        "iconSize": "20px"
+      },
+      {
+        "hours": null,
+        "urls": [
+          "https://i.imgur.com/bHhE3C3.gif",
+          "https://i.imgur.com/bHhE3C3.gif"
+        ],
+        "iconSize": "20px"
+      }
+    ]
+  },
+  "age": {
+    "column": "Status",
+    "target": "",
+    "rules": [
+      {
+        "hours": 24,
+        "color": "green"
+      },
+      {
+        "hours": 48,
+        "color": "orange"
+      },
+      {
+        "hours": null,
+        "color": "red"
+      }
+    ]
+  }
+}

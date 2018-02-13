@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Gerrit Help Review!",
+  "description": "A Chrome extension for helping gerrit users to identify the incoming code reviews that he/she hasn't reviewed yet quickly",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "dist/index.html"
+  },
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "file:///*",
+    "tabs",
+    "storage"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/gerrit/*"
+      ],
+      "css": [
+        "dist/inject/main.css"
+      ],
+      "js": [
+        "dist/inject/shell.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": ["dist/inject/main.js"]
+}
